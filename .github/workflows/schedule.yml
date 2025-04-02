@@ -2,7 +2,7 @@ name: Run API Requests Daily
 
 on:
   schedule:
-    - cron: "*/5 * * * *"  
+    - cron: "*/2 * * * *"  
   workflow_dispatch:  
 
 jobs:
