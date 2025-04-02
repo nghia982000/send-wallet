@@ -2,8 +2,8 @@ name: Run API Requests Daily
 
 on:
   schedule:
-    - cron: "32 3 * * *"  # Chạy vào 0h, 8h, 16h UTC mỗi ngày
-  workflow_dispatch:  # Cho phép chạy thủ công
+    - cron: "41 3 * * *"  
+  workflow_dispatch:  
 
 jobs:
   run-script:
