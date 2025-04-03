@@ -15,10 +15,10 @@ async def get_account_balance(session, account_id):
             for balance in balances:
                 if balance.get("asset_type") == "native":
                     balance_value = float(balance.get("balance", 0))
-                    if balance_value > 2:
+                    if balance_value > 3:
                         return f"Tài khoản: {account_id} - Số dư: {balance_value} Pi"
 
-            return None  # Không gửi nếu số dư <= 2
+            return None  # Không gửi nếu số dư <= 3
     except Exception as e:
         return f"⚠️ Lỗi khi gọi API cho {account_id}: {e}"
 
